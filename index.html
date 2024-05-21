@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Unforgettable Moments At Top Casino Hotels In The Netherlands. Discover opulent luxury and exhilarating entertainment at the Netherlands' leading casino hotels, presenting unparalleled accommodations paired with elite gaming experiences. Immerse yourself in unforgettable moments, where exceptional hospitality intertwines with electrifying casino thrills.">
+		<meta name="keywords" content="Best Netherlands casino hotels, Best Netherlands casino resorts, Netherlands casino hotel booking, Casino Hotels In Netherlands">
+        
+        
+        <!-- ========== Title ========= -->
+		<title>Top Casino Hotels in the Netherlands – Book Your Ultimate Stay Today!</title>
+		
+		
+		<!-- ============ Custom Link ========= -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  
+	  
+        <!-- ========= Google Fonts ========== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+        <!-- ============ Icon Link ========= -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+        <!-- ====================== Cookie PopUp Start ========================== -->
+		<div class="cookie-overlay show-overlay"></div>
+		<div class="cookie-overlay-2 show-overlay-2"></div>
+		<div class="cookie-popup" id="cookiePopup">
+			<div class="cookie-description">
+				<div class="cookie-text">
+					<img src="images/happy.png" class="cookie-image">  
+					<h3>Cookie Beleid</h3>
+					<p>We gebruiken cookies om de inhoud te personaliseren, advertenties aan te passen en te meten, en een betere gebruikerservaring te bieden. Door op 'Accepteren' te klikken, ga je hiermee akkoord zoals beschreven in ons cookiebeleid.</p>
+				</div>
+				<div class="cookie-btn">
+					<div class="cookie-double-btn">
+						<button onclick="acceptCookies()" class="cookie-cancel">Nee, bedankt</button>
+						<button onclick="acceptCookies()" class="cookie-accept">Accepteren</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+      	<style>
+            /* ---------------------------------- 
+                Cookie Popup CSS Start 
+            ------------------------------------- */
+            .cookie-popup {
+                display: none;
+                position: fixed;
+                left: 0;
+                right: 0;
+                background-color: #ffffff;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1000;
+                border-radius: 12px;
+            }
+
+            .cookie-popup.show {
+                display: block;
+                max-width: 620px;
+                margin: 0 auto;
+                text-align: center;
+                padding: 20px 30px 30px 30px;
+            }
+
+            .cookie-text > img {
+                width: 130px;
+                height: auto;
+                margin-bottom: 5px;
+            }
+
+            .cookie-text > h3 {
+                color: #2e2e2e;
+                font-size: 28px;
+                font-weight: bold;
+                font-family: 'Playfair Display', serif;
+                margin-bottom: 15px;
+                letter-spacing: 0.4px;
+            }
+
+            .cookie-text > p {
+                font-size: 16px;
+                line-height: 28px;
+                font-style: normal;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                color: rgb(110, 110, 110);
+            }
+
+            .cookie-double-btn{
+                display: inline-flex;
+                gap: 16px;
+            }
+
+            .cookie-double-btn button {
+                font-size: 16px;
+                padding: 10px 50px;
+                font-weight: 500;
+                cursor: pointer;
+                user-select: none;
+                transition-duration: 0.2s;
+                transition-timing-function: ease-in-out;
+                border: none;
+                color: #ffffff;
+                outline: 0px;
+                margin: 15px 0px 0px 0px;
+                font-family: 'Playfair Display', serif;
+                background: #1d3a2b;
+                color: #ffffff;
+                border-radius: 50px;
+                letter-spacing: 0.4px;
+                text-align: center;
+            }
+
+            button.cookie-cancel {
+                background: #385848;
+            }
+
+            .cookie-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(180deg, #344E41 0%, rgb(52 78 65 / 65%) 100%);
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                z-index: 999;
+                display: none;
+            }
+
+            .cookie-overlay-2 {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(180deg, #344E41 0%, rgb(52 78 65 / 65%) 100%);
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                z-index: 999;
+                display: none;
+            }
+
+            .show-overlay {
+                display: block;
+            }
+
+            .show-overlay-2 {
+                display: block;
+            }
+
+
+            @media only screen and (max-width: 600px) and (min-width: 320px) {
+                .cookie-popup.show {
+                    position: fixed;
+                    margin: 0px 15px;
+                    padding: 20px 15px 35px 15px;
+                }
+
+                .cookie-overlay{
+                    display: none;
+                }
+
+                .cookie-text > h3 {
+                    font-size: 24px;
+                }
+
+                .cookie-text > p {
+                    font-size: 15px;
+                    margin-bottom: 30px;
+                }
+
+                .cookie-double-btn{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 12px;
+                }
+
+                .cookie-double-btn button {
+                    margin: 0px;
+                    width: 100%;
+                }
+
+            }
+
+            @media only screen and (max-width: 850px) and (min-width: 768px) {
+                .cookie-popup.show {
+                    margin: 0 auto;
+                }
+
+                .cookie-overlay-2{
+                    display: none;
+                }
+            }
+
+            @media only screen and (min-width: 1024px) {
+                .cookie-overlay-2 {
+                    display: none;
+                }
+            }
+		    /* ------------------------------------ 
+		        Cookie Popup CSS End 
+		    --------------------------------------- */
+		</style>
+
+
+      	<script>
+			// ------------------- Cookie Popup JS Start -----------------------
+			document.addEventListener("DOMContentLoaded", function () {
+			if (!getCookie("acceptedCookies")) {
+				// Load background image of the popup first
+				document.querySelector(".cookie-overlay").classList.add("show-overlay");
+				document.querySelector(".cookie-overlay-2").classList.add("show-overlay-2");
+				document.getElementById("cookiePopup").classList.add("show");
+			} else {
+				// If cookies have already been accepted, remove the popup and overlay
+				document.querySelector(".cookie-overlay").classList.remove("show-overlay");
+				document.querySelector(".cookie-overlay-2").classList.remove("show-overlay-2");
+				document.getElementById("cookiePopup").classList.remove("show");
+			}
+			});
+
+			function acceptCookies() {
+				document.getElementById("cookiePopup").classList.remove("show");
+				document.querySelector(".cookie-overlay").classList.remove("show-overlay");
+				document.querySelector(".cookie-overlay-2").classList.remove("show-overlay-2");
+				setCookie("acceptedCookies", true, 30);
+
+				// Load content after accepting cookies
+				setTimeout(function () {
+					console.log("Content uploaded after 3 seconds");
+					// Add your code here to load website images and content
+				}, 3000);
+			}
+
+			function setCookie(name, value, days) {
+				var expires = "";
+				if (days) {
+					var date = new Date();
+					date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+					expires = "; expires=" + date.toUTCString();
+				}
+				document.cookie = name + "=" + (value || "") + expires + "; path=/";
+			}
+
+         	function getCookie(name) {
+				var nameEQ = name + "=";
+				var ca = document.cookie.split(';');
+					for (var i = 0; i < ca.length; i++) {
+						var c = ca[i];
+						while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+						if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+					}
+				return null;
+         	}
+         	// ------------------- Cookie Popup JS End -----------------------
+		</script>
+		<!-- ==================== Cookie PopUp End ============================== -->
+    </head>
+
+    <body>
+        <main>
+            <!-- ========== Home Section Start ========= -->
+            <section id="home-section" class="home">
+                <div class="container">
+                    <div class="home-content">
+                        <h1>Unforgettable Moments at Top Casino Hotels in the Netherlands</h1>
+
+                        <p>Discover opulent luxury and exhilarating entertainment at the Netherlands' leading casino hotels, presenting unparalleled accommodations paired with elite gaming experiences. Immerse yourself in unforgettable moments, where exceptional hospitality intertwines with electrifying casino thrills.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- ========== Home Section End ========= -->
+            
+
+
+            <!-- ========== Book Section Start ========= -->
+            <section class="book" id="book">
+                <div class="container flex">
+                    <form id="myForm">
+                        
+                        <div class="input grid">
+                            <div class="box">
+                                <label>Check-in:</label>
+                                <input type="date">
+                            </div>
+                            
+                            <div class="box">
+                                <label>Check-out:</label>
+                                <input type="date">
+                            </div>
+                            
+                            <div class="box">
+                                <label>Adults:</label> <br>
+                                <input type="number" placeholder="0">
+                            </div>
+                            
+                            <div class="box">
+                                <label>Email:</label> <br>
+                                <input type="email" placeholder="Your Email">
+                            </div>
+                            
+                            
+                            <div class="search">
+                                <input type="submit" value="SUBMIT" onclick="showConfirmation()">
+                            </div>
+                        </div>
+                        
+                    </form>	
+                </div>
+            </section>
+            
+            <!-- ========== Submit Popup ============= -->
+            <div id="confirmationPopup" class="popup">
+                <div class="popup-content">
+                    <span class="popup-close" onclick="closePopup()">&times;</span>
+                    <p>Form submitted successfully!</p>
+                </div>
+            </div>
+            <!-- =========== Book Section End ========= -->
+
+
+            <!-- =========== About Section Start ================ -->
+            <section id="about-section" class="about">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-img-part">
+                            <img src="images/about.jpeg" alt="about photo">
+                        </div>
+
+                        <div class="about-context-part">
+                            <h2>Enter the Realm of Netherlands' Casino Hotels 2024</h2>
+                            <p>
+                                Embark on an exhilarating journey of opulence and excitement in the vibrant world of casino hotels and resorts in the Netherlands. Let yourself be captivated by the irresistible charm of luxury as you step into the gleaming halls of these prestigious establishments. The air is filled with the thrilling sounds of cards being shuffled and roulette wheels spinning, creating an atmosphere of anticipation at every turn. Whether you're drawn to the timeless appeal of blackjack or enticed by the latest advancements in slot machine technology, endless excitement awaits within the very essence of these esteemed casino hotels.
+                            </p>
+                            <p>
+                                Yet, the allure of Netherlands's casino hotels extends far beyond just gaming. Indulge yourself in lavish accommodations that promise unparalleled comfort and relaxation. As the night unfolds, immerse yourself in a fusion of sophistication and thrill, savoring expertly crafted cocktails and engaging with seasoned dealers. Whether you're dining or gaming, every moment is a part of an unforgettable experience. These destinations serve as beacons of opportunity, where both fortunes and cherished memories are created, solidifying their reputation as premier destinations for entertainment and luxury.
+                            </p>
+
+                            
+                            <div class="section-description">
+                                <button>More Details</button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- =========== About Section End ================== -->
+
+
+
+            <!-- ========== Gallery Section Start ========= -->
+            <section id="gallery-section" class="gallery">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="section-title">
+                            <h2>Explore the Netherlands' Casino Hotel Spectacular!</h2> 
+                        </div>
+
+                        <div class="section-description">
+                            <p>OImmerse Yourself in the Timeless Elegance, Opulence, and Unique Charisma of Our Casino Hotel's Gallery</p>
+                            <button>More Details</button>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-images">
+                        <div class="grid-img-1">
+                            <img src="images/gallery-01.png" alt="gallery-01">
+                        </div>
+                        <div class="grid-img-2">
+                            <img src="images/gallery-2.png" alt="gallery-2">
+                            <img src="images/gallery-3.png" alt="gallery-3">
+                            
+                        </div>
+                        <div class="grid-img-3">
+                            <img src="images/gallery-04.png" alt="gallery-04">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========== Gallery Section End ========= -->
+
+
+            
+            <!-- ========== Room Section Start ========= -->
+            <section id="room-section" class="room">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="section-title">
+                            <h2>Explore Superb Casino Hotel Suites in Opulent Relaxation</h2> 
+                        </div>
+
+                        <div class="section-description">
+                            <p>In our luxury casino hotel, each room is crafted for comfort, boasting plush bedding, modern furnishings, and stunning vistas.</p>
+                            <button>More Details</button>
+                        </div>
+                    </div>
+
+
+                    <div class="room-content">
+                        <div class="room-card">
+                            <div class="card-img">
+                                <img src="images/Room-no-001.jpeg" alt="Room-no-001">
+                            </div>
+                            <div class="card-description">
+                                <h3>Casino Hotel Suite Room</h3>
+                                <p>from<span>$250/night</span></p>
+                                <small>35 sq <span>|</span> 2-3 guests  <span>|</span>  free breakfast</small>
+                            </div>
+                        </div>
+                        
+                        <div class="room-card">
+                            <div class="card-img">
+                                <img src="images/Room-no-002.jpeg" alt="Room-no-002">
+                            </div>
+                            <div class="card-description">
+                                <h3>Casino Hotel Luxury Room</h3>
+                                <p>from<span>$250/night</span></p>
+                                <small>35 sq <span>|</span> 2-3 guests  <span>|</span>  free breakfast</small>
+                            </div>
+                        </div>
+
+                        <div class="room-card room-card-03">
+                            <div class="card-img">
+                                <img src="images/Room-no-003.jpeg" alt="Room-no-003">
+                            </div>
+                            <div class="card-description">
+                                <h3>Casino Hotel Deluxe Room</h3>
+                                <p>from<span>$250/night</span></p>
+                                <small>35 sq <span>|</span> 2-3 guests  <span>|</span>  free breakfast</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ========== Room Section End ========= -->
+
+
+
+            <!-- ======== Animates Section Start ======== -->
+            <section id="animates-section" class="animates">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="section-title">
+                            <h2>Explore Distinctive Offerings at Our Casino Resort</h2> 
+                        </div>
+
+                        <div class="section-description">
+                            <p>In our casino hotel, our goal is to provide guests with seamless and delightful experiences that exceed expectations.</p>
+                            <button>More Details</button>
+                        </div>
+                    </div>
+
+
+                    <div class="animates-content">
+
+                        <div class="animates-card card-01">
+                            <div class="animates-img">
+                                <img src="images/animates-1.jpeg" alt="animates-1 photo">
+                            </div>
+
+                            <div class="animates-description">
+                                <ul>
+                                    <li>
+                                        <div class="list-num">
+                                            <small>01.</small>
+                                        </div>
+
+                                        <div class="list-des">
+                                            <h3>Sumptuous Spa Experience at the Casino Hotel</h3>
+                                            <p>Embark on a personalized indulgence journey at our casino hotel, offering a curated range of treatments. From serene massages to invigorating facials, our aim is to revitalize your entire being.</p>
+                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="animates-card card-01">
+                            <div class="animates-img">
+                                <img src="images/animates-2.jpeg" alt="animates-2 photo">
+                            </div>
+
+                            <div class="animates-description">
+                                <ul>
+                                    <li>
+                                        <div class="list-num">
+                                            <small>02.</small>
+                                        </div>
+
+                                        <div class="list-des">
+                                            <h3>Exciting Casino Floor at Our Hotel & Casino</h3>
+                                            <p>Dive into the lively atmosphere of our Dutch casino hotel, where luxury and excitement intersect at every corner. Enjoy top-tier gaming and unmatched hospitality in the heart of the Netherlands.</p>
+                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="animates-card card-01">
+                            <div class="animates-img">
+                                <img src="images/animates-3.jpeg" alt="animates-3 photo">
+                            </div>
+
+                            <div class="animates-description">
+                                <ul>
+                                    <li>
+                                        <div class="list-num">
+                                            <small>03.</small>
+                                        </div>
+
+                                        <div class="list-des">
+                                            <h3>Casino Hotel's Outdoor Swimming Pool</h3>
+                                            <p>Indulge in gourmet delights at our acclaimed casino hotel restaurant, where expert chefs blend local and international flavors for a truly memorable dining experience.</p>
+                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="animates-card card-02">
+                            <div class="animates-img">
+                                <img src="images/animates-4.jpeg" alt="animates-4 photo">
+                            </div>
+
+                            <div class="animates-description">
+                                <ul>
+                                    <li>
+                                        <div class="list-num">
+                                            <small>04.</small>
+                                        </div>
+
+                                        <div class="list-des">
+                                            <h3>Cafe & Restaurant at Our Casino Hotel</h3>
+                                            <p>Delight in the culinary wonders of our casino hotel's renowned Restaurant, where skilled chefs craft a menu to enchant your palate. Experience a symphony of local and international flavors that promise to captivate your senses.</p>
+                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ============== Animates Section End ================= -->
+
+
+
+            <!-- =========== Communication Section Start ========== -->
+            <section class="communication top">
+                <div class="container">
+                    <div class="text">
+                        <div class="heading">
+                            <h2>Guest Reviews of Our Casino Hotel</h2>
+                        </div>
+
+                        <div class="para">
+                            <p>Staying at the Netherlands casino hotel was a highlight of my trip. The elegant rooms, superb dining options, and exciting casino atmosphere exceeded my expectations. The staff were incredibly attentive, ensuring every aspect of my stay was perfect. The location by the beach added to the charm, offering stunning views and convenient access to relaxation. I can't wait to return for another unforgettable stay.</p>
+
+                            <div class="box flex">
+                                <div class="img">
+                                    <img src="images/client.png" alt=" client says">
+                                </div>
+                                
+                                <div class="name">
+                                    <h5>Daria</h5>
+                                    <h5>Norway</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =========== Communication Section End ========= -->
+
+
+
+            <!-- ========== Footer Section Start ========== -->
+            <section class="footer">
+                <div class="container">
+                    <div class="row">
+                
+                        <div class="footer-btn-group">
+                            <button type="button" class="footer-btn wow fadeInUp" data-wow-duration="1.5s" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Terms of Service
+                            </button>
+                            
+                            <button type="button" class="footer-btn wow fadeInUp" data-wow-duration="1.5s" data-bs-toggle="modal" data-bs-target="#myModal">
+                                Privacy Policy
+                            </button>
+                        </div>
+                        
+                        <div class="footer-terms">
+                            <!-- ======== Modal PopUp ======= -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                    
+                                        <!-- === Modal Header == -->
+                                        <div class="modal-header">
+                                            <h2 class="modal-title">Privacy Policy</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        
+                                        
+                                        <!-- === Modal Body === -->
+                                        <div class="modal-body">
+                                        
+                                            <div>
+                                                <h3 class="footer-title">Privacy Policy for accommodationcritic.com</h3>
+                                                <p class="footer-text">
+                                                    At accommodationcritic.com, accessible from accommodationcritic.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by accommodationcritic.com and how we use it.
+                                                    <br><br>
+                                                    If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">General Data Protection Regulation (GDPR)</h3>
+                                                <p class="footer-text">
+                                                    We are a Data Controller of your information.
+                                                    <br><br>
+                                                    accommodationcritic.com legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Information we collect and the specific context in which we collect the information:
+                                                </p>
+                                                
+                                                <ul class="list-icon">
+                                                
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                        <i class="fa-solid fa-check"></i>
+                                                        </span> accommodationcritic.com needs to perform a contract with you
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                        <i class="fa-solid fa-check"></i>
+                                                        </span> You have given accommodationcritic.com permission to do so
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> Processing your personal information is in accommodationcritic.com legitimate interests
+
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> accommodationcritic.com needs to comply with the law
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                            
+                                            
+                                            <div>
+                                                <p class="footer-text">
+                                                    accommodationcritic.com will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our policies.
+                                                    <br><br>
+                                                    If you are a resident of the European Economic Area (EEA), you have certain data protection rights. If you wish to be informed what Personal Information we hold about you and if you want it to be removed from our systems, please contact us.
+                                                    <br><br>
+                                                    In certain circumstances, you have the following data protection rights:
+                                                </p>
+                                                
+                                                <ul class="list-icon">
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                        <i class="fa-solid fa-check"></i>
+                                                        </span> The right to access, update or to delete the information we have on you.
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                        <i class="fa-solid fa-check"></i>
+                                                        </span> The right of rectification.
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> The right to object.
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> The right of restriction.
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> The right to data portability
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> The right to withdraw consent
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        
+                                            
+                                            <div>
+                                                <h3 class="footer-title">Log Files</h3>
+                                                <p class="footer-text">
+                                                    accommodationcritic.com follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
+                                                </p>
+                                            </div>	
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">Cookies and Web Beacons</h3>
+                                                <p class="footer-text">
+                                                    Like any other website, accommodationcritic.com uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+                                                </p>
+                                            </div>		
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">Privacy Policies</h3>
+                                                <p class="footer-text">
+                                                    You may consult this list to find the Privacy Policy for each of the advertising partners of accommodationcritic.com.
+                                                    <br>
+                                                    Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on accommodationcritic.com, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
+                                                    <br>
+                                                    Note that accommodationcritic.com has no access to or control over these cookies that are used by third-party advertisers.
+                                                </p>
+                                            </div>		
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">Third Party Privacy Policies</h3>
+                                                <p class="footer-text">
+                                                    accommodationcritic.com Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
+                                                    <br><br>
+                                                    You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.
+                                                    
+                                                </p>
+                                            </div>		
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">Children's Information</h3>
+                                                <p class="footer-text">
+                                                    Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+                                                    <br><br>
+                                                    accommodationcritic.com does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
+                                                </p>
+                                            </div>		
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">Online Privacy Policy Only</h3>
+                                                <p class="footer-text">
+                                                    Our Privacy Policy created at GDPRPrivacyPolicy.net) applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in accommodationcritic.com. This policy is not applicable to any information collected offline or via channels other than this website.
+                                                </p>
+                                            </div>		
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">Consent</h3>
+                                                <p class="footer-text">
+                                                    By using our website, you hereby consent to our Privacy Policy and agree to its terms.
+                                                </p>
+                                            </div>	
+                                            
+                                            
+                                        </div>
+                    
+                                        <!-- === Modal Footer === -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div  class="footer-policy">
+                            <!-- ======== Modal PopUp ======= -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg  modal-sm">
+                                    <div class="modal-content">
+                                    
+                                        <!-- == Modal Header == -->
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="exampleModalLabel">Terms of Service</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                            
+                                        <div class="modal-body">
+                                            <h3 class="footer-title">Website Terms and Conditions of Use</h3><br>
+                                            
+                                            <div>
+                                                <h3 class="footer-title">1. Terms</h3>
+                                                <p class="footer-text">
+                                                    By accessing this Website, accessible from accommodationcritic.com, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trade mark law.
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">2. Use License</h3>
+                                                <p class="footer-text">
+                                                    Permission is granted to temporarily download one copy of the materials on accommodationcritic.com's Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+                                                    <br><br>
+                                                </p>
+                                                
+                                                
+                                                <ul class="list-icon">
+                                                
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                        <i class="fa-solid fa-check"></i>
+                                                        </span> modify or copy the materials;
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                        <i class="fa-solid fa-check"></i>
+                                                        </span> use the materials for any commercial purpose or for any public display;
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> attempt to reverse engineer any software contained on accommodationcritic.com's Website;
+
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> remove any copyright or other proprietary notations from the materials; or
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="icon background-transparent">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </span> transferring the materials to another person or "mirror" the materials on any other server.
+                                                    </li>
+                                                </ul><br>
+                                                
+                                                
+                                                <p class="footer-text">
+                                                    This will let accommodationcritic.com to terminate upon violations of any of these restrictions. Upon termination, your viewing right will also be terminated and you should destroy any downloaded materials in your possession whether it is printed or electronic format.
+                                                    
+                                                </p>
+                                            </div>
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">3. Disclaimer</h3>
+                                                <p class="footer-text">
+                                                    All the materials on accommodationcritic.com's Website are provided "as is". accommodationcritic.com makes no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, accommodationcritic.com does not make any representations concerning the accuracy or reliability of the use of the materials on its Website or otherwise relating to such materials or any sites linked to this Website.
+                                                </p>
+                                            </div>	
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">4. Limitations</h3>
+                                                <p class="footer-text">
+                                                    accommodationcritic.com or its suppliers will not be hold accountable for any damages that will arise with the use or inability to use the materials on accommodationcritic.com’s Website, even if accommodationcritic.com or an authorize representative of this Website has been notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you.
+                                                </p>
+                                            </div>		
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">5. Revisions and Errata</h3>
+                                                <p class="footer-text">
+                                                    The materials appearing on accommodationcritic.com’s Website may include technical, typographical, or photographic errors. accommodationcritic.com will not promise that any of the materials in this Website are accurate, complete, or current. accommodationcritic.com may change the materials contained on its Website at any time without notice. accommodationcritic.com does not make any commitment to update the materials.
+                                                </p>
+                                            </div>		
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">6. Links</h3>
+                                                <p class="footer-text">
+                                                    accommodationcritic.com has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by accommodationcritic.com of the site. The use of any linked website is at the user’s own risk.
+                                                    
+                                                </p>
+                                            </div>		
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">7. Site Terms of Use Modifications</h3>
+                                                <p class="footer-text">
+                                                    accommodationcritic.com may revise these Terms of Use for its Website at any time without prior notice. By using this Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use.
+                                                </p>
+                                            </div>		
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">8. Your Privacy</h3>
+                                                <p class="footer-text">
+                                                    Please read our Privacy Policy.
+                                                </p>
+                                            </div>		
+                                            
+                                            
+                                            <div>
+                                                <h3 class="footer-title">9. Governing Law</h3>
+                                                <p class="footer-text">
+                                                    Any claim related to accommodationcritic.com's Website shall be governed by the laws of ar without regards to its conflict of law provisions.
+                                                </p>
+                                            </div>	
+                                            
+                                        </div>
+                                        
+                                        <!-- == Modal Footer == -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </section>
+            <!-- =========== Footer Section End =========== -->
+		
+        </main>
+
+        <!-- ========== Script Link =========== -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+			// Function to open the popup (Submit Popup)
+			function openPopup() {
+				document.getElementById('confirmationPopup').style.display = 'block';
+			}
+
+			// Function to close the popup
+			function closePopup() {
+				document.getElementById('confirmationPopup').style.display = 'none';
+			}
+
+			// Attach an event listener to the form
+			document.getElementById('myForm').addEventListener('submit', function (event) {
+				// Prevent the default form submission
+				event.preventDefault();
+
+				// Perform your form submission logic here
+
+				// Open the popup after form submission
+				openPopup();
+			});
+		</script>
+    </body>
+</html>
